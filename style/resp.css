@@ -1,0 +1,7 @@
+.display {
+    cursor:pointer;
+    height:auto !important;
+    position: unset !important;
+    top: 95px;
+    align-self: flex-start;
+}

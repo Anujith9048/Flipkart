@@ -5,11 +5,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Style/gmailCss.css">
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="style/resp.css">
         <link rel="stylesheet" href="Style/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <nav class="row main-nav d-none d-md-flex">
+
+        <nav class="row small-nav d-flex d-md-none">
+	    <div class="container d-flex">
+
+		<div class="col-6 small-logo-box">
+		    <a href="#"><img alt="" class=" logo-small me-2 ms-2" src="img/back.svg"></a>
+		    <a href="#"><img alt="" class=" logo-small me-2 " src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-ea579c.png"></a>
+	        </div>
+
+	        <div class="col-6 d-flex align-items-center justify-content-end">
+		    <img alt="" class="searchB " src="img/searchB.svg">
+		    <img alt="" class="searchB ms-3 me-4" src="img/cartB.svg">
+		    <button type="submit" class="small-nav-btn border-0 bg-light ms-2 me-2">Login</button>
+		</div>
+	</nav>
+
+
+        <nav class="row main-nav d-none d-md-flex fixed-top">
 	    <div class="container d-flex">
 
 		<div class="col-lg-2 logo-box">
@@ -29,7 +48,7 @@
 			<li class="nav-item text-white">
 			    <a href="#" class="text-white">Become a Seller</a>
 			</li>
-			<li class="nav-item text-white">
+			<li class="nav-item text-white more-list">
 			    <a href="#" class="text-white">More</a>
 			    <img alt="" class="arrow-img me-2" src="img/down.svg">
 			</li>
@@ -75,16 +94,139 @@
 		    </li>
 		    <li class= "nav-list bottom-nav-list">
 			<a href="#" class="text-decoration-none text-dark bottom-nav-links ">Flights</a>
-			    <img alt="" class="arrow-img" src="img/down2.svg">
+			    
 		    </li>
 		    <li class= "nav-list bottom-nav-list">
 			<a href="#" class="text-decoration-none text-dark bottom-nav-links ">EOffer Zone</a>
-			    <img alt="" class="arrow-img" src="img/down2.svg">
+			    
 		    </li>
 		</ul>
 	    </div>
         </nav>
         
+
+	<div class="row main-content mt-lg-5 mt-md-3 mt-0">
+	    <div class="col-md-5 display  mt-md-5"> 
+		<img alt="" class="mobile-img img-fluid d-md-block d-none" src="img/mobile.png">
+		<img alt="" class="mobile-img img-fluid d-md-none d-flex me-auto ms-auto" src="img/mobileSm.png">
+
+		<div class="btn-box mt-2 d-md-flex  d-none">
+		    <div class ="col-md-6">
+		    <button class="cart-btn border-0 fw-normal d-flex justify-content-center">
+		        <img alt="" class="mobile-img d-none d-lg-block" src="img/cart.svg">
+		         ADD TO CART
+		    </button>
+   		</div>
+
+		<div class ="col-md-6"> 
+		    <button class="buy-btn border-0 fw-normal d-flex justify-content-center">
+		        <img alt="" class="mobile-img d-none d-lg-block" src="img/buy.svg">
+		         BUY NOW
+		    </button>
+   		</div>
+		</div>
+
+	    </div>
+	    <div class="col-md-7 mt-md-5 mt-0 p-0">
+		<div class="row mobDetails mt-3">
+		    <div class="col-12 col-lg-8 top-list d-md-flex d-none" >
+			    <ul class="top-list-items d-md-flex m-0 p-0 ">
+				<li class="top-list-item d-flex">
+				    <a class="text-decoration-none">Home</a>
+		        	    <img alt="" class="right-img" src="img/right.svg">
+				</li>
+				<li class="top-list-item d-flex accs">
+			            <a class="text-decoration-none accs-txt">Mobiles &amp; Accessories</a>
+		        	    <img alt="" class="right-img" src="img/right.svg">
+				</li>
+				<li class="top-list-item d-flex">
+			            <a class="text-decoration-none">Mobiles</a>
+		                    <img alt="" class="right-img" src="img/right.svg">
+				</li>
+				<li class="top-list-item d-flex">
+   				    <a class="text-decoration-none">vivo Mobiles</a>
+		        	    <img alt="" class="right-img" src="img/right.svg">
+				</li>
+				<li class="top-list-vivo d-flex">
+				    <a class="text-decoration-none">vivo T3 Lite 5...</a>
+				</li>
+			    </ul>
+		        </div>
+                <div class="col-12 col-lg-4 d-md-flex d-none">
+		    <ul class="top-list-items d-flex m-0 p-0 float-lg-end float-start me-4">
+			<li class="top-right-item d-flex">
+		            <img alt="" class="check-img me-1" src="img/check.svg">
+			    <a class="text-decoration-none me-3">Compare</a>
+			</li>
+			<li class="top-right-item d-flex share-sec">
+			    <span class="material-symbols-outlined share-icon me-1">forward</span>
+			    <a class="text-decoration-none">Share</a>
+			</li>
+			
+	  	    </ul>
+ 		</div>
+		<div class="row">
+		    <div class="col-md-12">
+			<p class="title ms-4 ms-md-0 mt-lg-2 mt-0 mb-0">vivo T3 Lite 5G (Vibrant Green, 128 GB) (4 GB RAM)</p>
+			<div class="review d-flex">
+			    <p class="review mt-2 d-md-flex d-none">Be the first to Review this product</p>
+			    <img alt="" class="plus-img  ms-4 ms-md-1  mt-1" src="img/plus.png">
+			</div>
+		    </div>
+
+		    <div class="col-md-4 col-12">
+			<p class="offer mt-1  mb-0 d-md-flex d-none">Extra ₹4000 off</p>
+			<p class="rate mb-0 d-flex fs-4 ms-4 ms-md-0">₹10,499 <span class="old-rate ms-3 fs-6 mt-2 text-decoration-line-through fw-normal">₹14,499</span> <span class="offer-details ms-3 fs-6 mt-2">27%off</span></p>
+		    </div>
+		</div>
+
+		<div class="bank-offers col-md-12 d-md-block d-none">
+		    <p class="bank-title mb-0 mt-3">Available offers</p>
+		    <div class="d-flex">
+			<img alt="" class="tag-icon" src="img/tag.png">
+			<p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> Get ₹50 Instant Discount on first Flipkart UPI transaction on order of ₹200 and above </span> <span class="tc"> T&amp;C </span></p>
+		    </div>
+		    <div class="d-flex">
+			<img alt="" class="tag-icon" src="img/tag.png">
+			<p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> 5% Cashback on Flipkart Axis Bank Card </span> <span class="tc"> T&amp;C </span></p>
+		    </div>
+		    <div class="d-flex">
+			<img alt="" class="tag-icon" src="img/tag.png">
+			<p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> ₹500 Off On Flipkart Axis Bank Credit Card Transactions </span> <span class="tc"> T&amp;C </span></p>
+		    </div>
+		    <div class="d-flex">
+			<img alt="" class="tag-icon" src="img/tag.png">
+			<p class="bank-offer-title mb-0 mt-2 ms-2" >Special Price <span class="offer-descr fw-normal"> Get extra ₹4000 off (price inclusive of cashback/coupon) </span> <span class="tc"> T&amp;C </span></p>
+		    </div>
+		    <p class="tc mb-0 mt-2 ms-2" >View 5 more offers</p>
+		</div>
+		
+		<div class="col-6 d-md-block d-none exchange-area p-0 mt-4">
+		    <div class="col-12 d-flex exchange align-items-center">
+			<div class="col-8 d-flex">
+			    <img class="fill-dot me-3 ms-3" alt="" src="img/filldot.png">
+			    <p class="exchange-txt  me-3 mb-0">Buy without Exchange</p>
+			</div>
+			<div class="col-4">
+			    <p class="exchange-txt float-end mb-0">₹10,499</p>
+			</div>
+		    </div>
+		    <div class="col-12  no-exchange align-items-center ">
+			<div class="no-ex-contents align-items-center d-flex w-100">
+			    <div class="col-8 d-flex">
+			        <img class="fill-dot me-3 ms-3" alt="" src="img/dot.png">
+			        <p class="exchange-txt-low  me-3 mb-0">Buy with Exchange</p>
+			    </div>
+			    <div class="col-4">
+			        <p class="exchange-txt-low float-end mb-0 bold">Up to ₹9,050 off</p>
+			    </div>
+			</div>
+			    <p class="exchange-txt text-danger mb-0 mt-2 w-100 text-center">Enter pincode to check if exchange is available</p>
+		    </div>
+		</div>
+    	    </div>
+	</div>
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
