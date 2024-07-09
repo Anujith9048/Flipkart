@@ -1,0 +1,193 @@
+body{
+   background-color: #f1f3f6;
+}
+.white{
+    background-color:#fff;
+}
+.int{
+    border-radius: 4px;
+    box-shadow:0px 2px 12px 0px rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+.interest-title{
+    margin:0;
+    font-size: 21px;
+    font-weight: 500;
+}
+.interest-title-low{
+    margin-bottom:0px;
+    font-size: 18px;
+    color: #878787;
+    margin-top: 4px;
+}
+.shop-btn{
+    margin-top: 16px;
+    color: #fff;
+    background: #2874f0;
+    border-radius: 2px;
+    border: none;
+    padding: 8px 16px;
+    box-shadow: none;
+}
+.interest-heading{
+    font-size: 24px;
+    padding: 32px 32px 24px;
+    font-weight: 500;
+}
+.phone-details{
+    cursor:pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+    line-height: 1.4;
+
+    
+}
+.similar-box{ 
+    cursor:pointer;
+    &:hover .phone-details{
+        color:#2874f0;
+    }
+}
+.phone-price{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+}
+.old-price{
+    font-size:14px;
+    color: #878787;
+    text-decoration:line-through;
+}
+.price-desc{
+    color: #388e3c;
+    font-size: 13px;
+    letter-spacing: -.2px;
+    font-weight: 500;
+}
+.stories-title{
+    font-size:14px;
+    color: #848484;
+    font-weight: 500;
+    margin-top: 14px;
+    padding: 14px 0;
+}
+.brand{
+    color: #565656;
+    margin-left: 3px;
+}
+.most-search-title{
+    font-size:14px;
+    color: #848484;
+    text-transform: uppercase;
+    margin-right: 3px;
+}
+.most-search{
+    color: #505050;
+    padding: 0 5px;
+    border-right: 1px solid #333;
+    font-size: 12px;
+}
+.footer-row{
+    background-color:#172337;
+}
+.list-style-none{
+    list-style:none;
+}
+.list-header{
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.list-footer{
+    line-height: 2;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+.right-col-footer{
+    border-left:1px solid #878787;
+}
+.bottom-footer{
+    background-color:#172337;
+    border-top:1px solid #878787;
+}
+.footer-txt{
+    cursor:pointer;
+    font-size:14px;
+    margin-left:8px;
+}
+.btm-footer-items img{
+    height:20px;
+}
+.variant-txt{
+    font-size:14px;
+}
+.variant-txt-low{
+    font-size:14px;
+    color:#666666;
+}
+.find-seller-btn{
+    height:35px;
+    border:1px solid #87878773;
+    font-size:13px;
+    border-radius:5px;
+    padding:5px 10px;
+}
+.find-seller-txt{
+    font-size:12px;
+}
+.delivery-box{
+    border-top:1px solid #00000029;
+}
+.b-btm{
+    border-bottom:1px solid #00000029;
+}
+.rupee{   
+    background-color: #008703;
+    border-radius: 50%;
+    width: auto;
+}
+.vivo-logo{
+    height:30px;
+
+}
+.high-top{
+    font-size:12px;
+    color:#666666;
+}
+.high-bott{
+    font-size:12px;
+}
+.bank-title{
+    font-weight:500;
+}
+.bank-offer-title{
+    font-weight:500;
+    font-size:14px;
+}
+.offer-descr{
+    font-size:14px;
+    font-weight:100;
+}
+
+.que-txt-low{
+    font-size:12px;
+    color:#878787;
+}
+.similar-img-sm{
+    width: 58px;
+    padding: 9px;
+}
+.buy-btn{
+    height:55px;
+    width:100%;
+}
+.other-title{
+    width:103px !important;
+}

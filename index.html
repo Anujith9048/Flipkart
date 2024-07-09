@@ -1,411 +1,870 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Flipkart.com </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="Style/gmailCss.css">
-        <link rel="stylesheet" media="screen and (max-width: 767px)" href="style/resp.css">
-        <link rel="stylesheet" href="Style/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    </head>
-    <body>
+   <head>
+      <title> Flipkart.com </title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="style/bootstrap.bundle.min"></script>
+      <link rel="stylesheet" media="screen and (max-width: 767px)" href="style/resp.css">
+      <link rel="stylesheet" href="style/bootstrap.min.css">
+      <link rel="stylesheet" href="style/fonts.css">
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="stylesheet" href="style/style2.css">
+      <link rel="stylesheet" href="style/product.css">
+   </head>
+   <body>
+      <nav class="row small-nav d-flex d-md-none">
+         <div class="container d-flex">
+         <div class="col-6 small-logo-box">
+            <a href="#"><img alt="" class=" logo-small me-2 ms-2" src="img/back.svg"></a>
+            <a href="#"><img alt="" class=" logo-small me-2 " src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-ea579c.png"></a>
+         </div>
+         <div class="col-6 d-flex align-items-center justify-content-end">
+            <img alt="" class="searchB " src="img/searchB.svg">
+            <img alt="" class="searchB ms-3 me-4" src="img/cartB.svg">
+            <button type="submit" class="small-nav-btn border-0 bg-light ms-2 me-2">Login</button>
+         </div>
+      </nav>
+      <nav class="row main-nav d-none d-md-flex fixed-top">
+         <div class="container d-flex">
+            <div class="col-lg-2 logo-box">
+               <a href="#"><img alt="" class=" logo me-2 " src="img/logo.png"></a>
+            </div>
+            <div class="col-6 col-lg-5 d-flex input-box">
+               <form class="bg-light input-wrapper ">
+                  <input type="text" placeholder="Serach for products, brands and more">
+                  <img alt="" class="search-img " src="img/search.svg">
+               </form>
+               <button type="submit" class="nav-btn">Login</button>
+            </div>
+            <div class=" col-lg-5 d-flex">
+               <ul class="navbar-nav">
+                  <li class="nav-item text-white">
+                     <a href="#" class="text-white">Become a Seller</a>
+                  </li>
+                  <li class="nav-item text-white more-list">
+                     <a href="#" class="text-white">More</a>
+                     <img alt="" class="arrow-img me-2" src="img/down.svg">
+                  </li>
+                  <li class="nav-item text-white d-flex">
+                     <img alt="" class="cart-img me-2" src="img/cart.svg">
+                     <a href="#" class="text-white">Cart</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <nav class="bottom-nav d-none d-lg-flex">
+         <div class="container-fluid bottom-container">
+            <ul class="navbar-nav text-decoration-none  justify-content-between">
+               <li class= "nav-list bottom-nav-list">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links">Electronics</a>
+                  <img alt="" class="arrow-img" src="img/down2.svg">
+               </li>
+               <li class= "nav-list bottom-nav-list ">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links">TVs &amp; Appliances</a>
+                  <img alt="" class="arrow-img " src="img/down2.svg">
+               </li>
+               <li class= "nav-list bottom-nav-list ">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links">Men</a>
+                  <img alt="" class="arrow-img" src="img/down2.svg">
+               </li>
+               <li class= "nav-list bottom-nav-list ">
+                  <a href="#" class="text-decoration-none text-dark  bottom-nav-links">Women</a>
+                  <img alt="" class="arrow-img mt-1" src="img/down2.svg">
+               </li>
+               <li class= "nav-list bottom-nav-list">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links ">Baby &amp; Kids</a>
+                  <img alt="" class="arrow-img" src="img/down2.svg">
+               </li>
+               <li class= "nav-list bottom-nav-list">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links ">Home &amp; Furniture</a>
+                  <img alt="" class="arrow-img" src="img/down2.svg">
+               </li>
+               <li class= "nav-list bottom-nav-list">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links ">Sports,Book & More</a>
+                  <img alt="" class="arrow-img" src="img/down2.svg">
+               </li>
+               <li class= "nav-list bottom-nav-list">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links ">Flights</a>
+               </li>
+               <li class= "nav-list bottom-nav-list">
+                  <a href="#" class="text-decoration-none text-dark bottom-nav-links ">EOffer Zone</a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="row main-content mt-lg-5 mt-md-3 mt-0 white">
+         <div class="col-md-5 display  mt-md-5">
+            <img alt="" class="mobile-img img-fluid d-md-block d-none" src="img/mobile.png">
+            <img alt="" class="mobile-img img-fluid d-md-none d-flex me-auto ms-auto" src="img/mobileSm.png">
+            <div class="btn-box mt-2 d-md-flex m-4 ms-md-5 d-none">
+               <div class ="col-md-6">
+                  <button class="cart-btn border-0 fw-normal d-flex justify-content-center">
+                  <img alt="" class="mobile-img d-none d-lg-block" src="img/cart.svg">
+                  ADD TO CART
+                  </button>
+               </div>
+               <div class ="col-md-6"> 
+                  <button class="buy-btn border-0 fw-normal d-flex justify-content-center">
+                  <img alt="" class="mobile-img d-none d-lg-block" src="img/buy.svg">
+                  BUY NOW
+                  </button>
+               </div>
+            </div>
+         </div>
 
-        <nav class="row small-nav d-flex d-md-none">
-	    <div class="container d-flex">
-
-		<div class="col-6 small-logo-box">
-		    <a href="#"><img alt="" class=" logo-small me-2 ms-2" src="img/back.svg"></a>
-		    <a href="#"><img alt="" class=" logo-small me-2 " src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-ea579c.png"></a>
-	        </div>
-
-	        <div class="col-6 d-flex align-items-center justify-content-end">
-		    <img alt="" class="searchB " src="img/searchB.svg">
-		    <img alt="" class="searchB ms-3 me-4" src="img/cartB.svg">
-		    <button type="submit" class="small-nav-btn border-0 bg-light ms-2 me-2">Login</button>
-		</div>
-	</nav>
-
-
-        <nav class="row main-nav d-none d-md-flex fixed-top">
-	    <div class="container d-flex">
-
-		<div class="col-lg-2 logo-box">
-		    <a href="#"><img alt="" class=" logo me-2 " src="img/logo.png"></a>
-	        </div>
-
-	        <div class="col-6 col-lg-5 d-flex input-box">
-		    <form class="bg-light input-wrapper ">
-			<input type="text" placeholder="Serach for products, brands and more">
-			<img alt="" class="search-img " src="img/search.svg">
-		    </form>
-		    <button type="submit" class="nav-btn">Login</button>
-		</div>
-
-	        <div class=" col-lg-5 d-flex">
-		    <ul class="navbar-nav">
-			<li class="nav-item text-white">
-			    <a href="#" class="text-white">Become a Seller</a>
-			</li>
-			<li class="nav-item text-white more-list">
-			    <a href="#" class="text-white">More</a>
-			    <img alt="" class="arrow-img me-2" src="img/down.svg">
-			</li>
-			<li class="nav-item text-white d-flex">
-			    <img alt="" class="cart-img me-2" src="img/cart.svg">
-			    <a href="#" class="text-white">Cart</a>
-			</li>
-		    </ul>
-		</div>
+	<div class="variant-details d-block d-md-none row ps-4 ">
+	    <div class="col-12">
+		<p class="variant-txt m-0 my-3">Select Variant</p>
 	    </div>
-	</nav>
-
-	<nav class="bottom-nav d-none d-lg-flex">
-	    <div class="container-fluid bottom-container">
-		<ul class="navbar-nav text-decoration-none  justify-content-between">
-		    <li class= "nav-list bottom-nav-list">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links">Electronics</a>
-			    <img alt="" class="arrow-img" src="img/down2.svg">
-		    </li>
-		    <li class= "nav-list bottom-nav-list ">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links">TVs &amp; Appliances</a>
-			    <img alt="" class="arrow-img " src="img/down2.svg">
-		    </li>
-		    <li class= "nav-list bottom-nav-list ">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links">Men</a>
-			    <img alt="" class="arrow-img" src="img/down2.svg">
-		    </li>
-		    <li class= "nav-list bottom-nav-list ">
-			<a href="#" class="text-decoration-none text-dark  bottom-nav-links">Women</a>
-			    <img alt="" class="arrow-img mt-1" src="img/down2.svg">
-		    </li>
-		    <li class= "nav-list bottom-nav-list">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links ">Baby &amp; Kids</a>
-			    <img alt="" class="arrow-img" src="img/down2.svg">
-		    </li>
-		    <li class= "nav-list bottom-nav-list">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links ">Home &amp; Furniture</a>
-			    <img alt="" class="arrow-img" src="img/down2.svg">
-		    </li>
-		    <li class= "nav-list bottom-nav-list">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links ">Sports,Book & More</a>
-			    <img alt="" class="arrow-img" src="img/down2.svg">
-		    </li>
-		    <li class= "nav-list bottom-nav-list">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links ">Flights</a>
-			    
-		    </li>
-		    <li class= "nav-list bottom-nav-list">
-			<a href="#" class="text-decoration-none text-dark bottom-nav-links ">EOffer Zone</a>
-			    
-		    </li>
-		</ul>
+	    <div class="col-12 b-top d-flex">
+		<p class="variant-txt m-0 my-3">Color: Vibrant Green</p>
+		<p class="variant-txt-low float-end ms-auto m-0 my-3">2 more </p>
+		<img src="img/right.svg" alt="" class="float-end m-0">
 	    </div>
-        </nav>
-        
-
-	<div class="row main-content mt-lg-5 mt-md-3 mt-0">
-	    <div class="col-md-5 display  mt-md-5"> 
-		<img alt="" class="mobile-img img-fluid d-md-block d-none" src="img/mobile.png">
-		<img alt="" class="mobile-img img-fluid d-md-none d-flex me-auto ms-auto" src="img/mobileSm.png">
-
-		<div class="btn-box mt-2 d-md-flex m-4 ms-md-5 d-none">
-		    <div class ="col-md-6">
-		    <button class="cart-btn border-0 fw-normal d-flex justify-content-center">
-		        <img alt="" class="mobile-img d-none d-lg-block" src="img/cart.svg">
-		         ADD TO CART
-		    </button>
-   		</div>
-
-		<div class ="col-md-6"> 
-		    <button class="buy-btn border-0 fw-normal d-flex justify-content-center">
-		        <img alt="" class="mobile-img d-none d-lg-block" src="img/buy.svg">
-		         BUY NOW
-		    </button>
-   		</div>
-		</div>
-
+	    <div class="col-12 b-top d-flex">
+		<p class="variant-txt m-0 my-3">RAM: 6GB</p>
+		<p class="variant-txt-low float-end ms-auto m-0 my-3">2 more </p>
+		<img src="img/right.svg" alt="" class="float-end  m-0 my-3">
 	    </div>
-	    <div class="col-md-7 mt-md-5 mt-0 p-0">
-		<div class="row mobDetails mt-3">
-		    <div class="col-12 col-lg-8 top-list d-md-flex d-none" >
-			    <ul class="top-list-items d-md-flex m-0 p-0 ">
-				<li class="top-list-item d-flex">
-				    <a class="text-decoration-none">Home</a>
-		        	    <img alt="" class="right-img" src="img/right.svg">
-				</li>
-				<li class="top-list-item d-flex accs">
-			            <a class="text-decoration-none accs-txt">Mobiles &amp; Accessories</a>
-		        	    <img alt="" class="right-img" src="img/right.svg">
-				</li>
-				<li class="top-list-item d-flex">
-			            <a class="text-decoration-none">Mobiles</a>
-		                    <img alt="" class="right-img" src="img/right.svg">
-				</li>
-				<li class="top-list-item d-flex">
-   				    <a class="text-decoration-none">vivo Mobiles</a>
-		        	    <img alt="" class="right-img" src="img/right.svg">
-				</li>
-				<li class="top-list-vivo d-flex">
-				    <a class="text-decoration-none">vivo T3 Lite 5...</a>
-				</li>
-			    </ul>
-		        </div>
-                <div class="col-12 col-lg-4 d-md-flex d-none">
-		    <ul class="top-list-items d-flex m-0 p-0 float-lg-end float-start me-4">
-			<li class="top-right-item d-flex">
-		            <img alt="" class="check-img me-1" src="img/check.svg">
-			    <a class="text-decoration-none me-3">Compare</a>
-			</li>
-			<li class="top-right-item d-flex share-sec">
-			    <span class="material-symbols-outlined share-icon me-1">forward</span>
-			    <a class="text-decoration-none">Share</a>
-			</li>
-			
-	  	    </ul>
- 		</div>
-		<div class="row">
-		    <div class="col-md-12">
-			<p class="title ms-4 ms-md-0 mt-lg-2 mt-0 mb-0">vivo T3 Lite 5G (Vibrant Green, 128 GB) (4 GB RAM)</p>
-			<div class="review d-flex">
-			    <p class="review mt-2 d-md-flex d-none">Be the first to Review this product</p>
-			    <img alt="" class="plus-img  ms-4 ms-md-1  mt-1" src="img/plus.png">
-			</div>
-		    </div>
-
-		    <div class="col-md-4 col-12">
-			<p class="offer mt-1  mb-0 d-md-flex d-none">Extra ₹4000 off</p>
-			<p class="rate mb-0 d-flex fs-4 ms-4 ms-md-0">₹10,499 <span class="old-rate ms-3 fs-6 mt-2 text-decoration-line-through fw-normal">₹14,499</span> <span class="offer-details ms-3 fs-6 mt-2">27%off</span></p>
-		    </div>
-		</div>
-
-		<div class="bank-offers col-md-12 d-md-block d-none">
-		    <p class="bank-title mb-0 mt-3">Available offers</p>
-		    <div class="d-flex">
-			<img alt="" class="tag-icon" src="img/tag.png">
-			<p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> Get ₹50 Instant Discount on first Flipkart UPI transaction on order of ₹200 and above </span> <span class="tc"> T&amp;C </span></p>
-		    </div>
-		    <div class="d-flex">
-			<img alt="" class="tag-icon" src="img/tag.png">
-			<p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> 5% Cashback on Flipkart Axis Bank Card </span> <span class="tc"> T&amp;C </span></p>
-		    </div>
-		    <div class="d-flex">
-			<img alt="" class="tag-icon" src="img/tag.png">
-			<p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> ₹500 Off On Flipkart Axis Bank Credit Card Transactions </span> <span class="tc"> T&amp;C </span></p>
-		    </div>
-		    <div class="d-flex">
-			<img alt="" class="tag-icon" src="img/tag.png">
-			<p class="bank-offer-title mb-0 mt-2 ms-2" >Special Price <span class="offer-descr fw-normal"> Get extra ₹4000 off (price inclusive of cashback/coupon) </span> <span class="tc"> T&amp;C </span></p>
-		    </div>
-		    <p class="tc mb-0 mt-2 ms-2" >View 5 more offers</p>
-		</div>
-		
-		<div class="col-6 d-lg-block d-none exchange-area p-0 mt-4">
-		    <div class="col-12 d-flex exchange align-items-center">
-			<div class="col-8 d-flex">
-			    <img class="fill-dot me-3 ms-3" alt="" src="img/filldot.png">
-			    <p class="exchange-txt  me-3 mb-0">Buy without Exchange</p>
-			</div>
-			<div class="col-4">
-			    <p class="exchange-txt float-end mb-0">₹10,499</p>
-			</div>
-		    </div>
-		    <div class="col-12  no-exchange align-items-center ">
-			<div class="no-ex-contents align-items-center d-flex w-100">
-			    <div class="col-8 d-flex">
-			        <img class="fill-dot me-3 ms-3" alt="" src="img/dot.png">
-			        <p class="exchange-txt-low  me-3 mb-0">Buy with Exchange</p>
-			    </div>
-			    <div class="col-4">
-			        <p class="exchange-txt-low float-end mb-0 bold">Up to ₹9,050 off</p>
-			    </div>
-			</div>
-			<p class="exchange-txt text-danger mb-0 mt-2 w-100 text-center">Enter pincode to check if exchange is available</p>
-		   </div>
-		</div>
-
-		<div class="col-md-12 d-none d-md-block p-0">
-
-		    <div class="col-12 container-fluid p-0 mt-4">
-			<img alt="" class="img-fluid float-start me-5" src="img/vivosmall.png">
-			<p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-3 m-0">1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories <span class="tc">Know More</p>
-		    </div>
-
-		    <div class="col-12 p-0 mt-3 row">
-			<div class="col-6 p-0 m-0">
-			    <p class="detail-title float-start me-5 ms-3">Color</p>
-			    <img alt="" class="img-fluid float-start ms-lg-5 ms-3" src="img/mobcolor.png">
-			</div>
-			<div class="col-6 p-0 m-0 d-block">
-			    <p class="detail-title float-start me-5">RAM</p>
-			    <img alt="" class="img-fluid float-start ms-lg-5 ms-0" src="img/ram.png">
-			</div>
-		    </div>
-
-		    <div class="col-12 p-0 mt-3 row">
-			<div class="col-6 p-0 m-0 d-lg-flex d-block">
-			    <p class="detail-title float-start me-5 ms-3">Highlights</p>
-			    <ul class="img-fluid float-start offer-descr pe-3 details-ul">
-				<li class="highlights-list">4 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
-				<li class="highlights-list">16.66 cm (6.56 inch) Display</li>
-				<li class="highlights-list">50MP + 2MP | 8MP Front Camera</li>
-				<li class="highlights-list">5000 mAh Battery</li>
-				<li class="highlights-list">Dimensity 6300 Processor</li>
-			    </ul>
-			</div>
-
-			<div class="col-6 p-0 m-0 d-lg-flex d-block">
-			    <p class="detail-title float-start me-1">Easy Payment options</p>
-			    <ul class="img-fluid float-start offer-descr p-2 ps-3 details-ul">
-				<li class="highlights-list">No cost EMI starting from ₹3,500/month</li>
-				<li class="highlights-list">Net banking & Credit/ Debit/ ATM card</li>
-				<p class="tc list-style-none">View Details<p>
-			    </ul>
-			</div>
-		    </div>
-
-		    <div class="col-12 p-0 mt-3 row">
-			<div class="col-6 p-0 m-0 d-lg-flex d-block">
-			    <p class="detail-title float-start me-5 ms-3">Seller</p>
-			    <ul class="img-fluid float-start offer-descr p-2 ps-3 details-ul ms-lg-5 ms-0">
-				<p class="tc list-style-none mb-0">Flashstar Commerce</p>
-				<li class="highlights-list mt-0">7 Days Service Center Replacement/Repair</li>
-				<li class="highlights-list">GST invoice available</li>
-				<p class="tc list-style-none">See other sellers<p>
-			    </ul>
-			</div>
-		    </div>
-
-		    <div class="col-5 p-0 mt-3 row ms-4">
-		        <img alt="" class="img-fluid ms-3 w-5" src="img/coins.png">
-		    </div>
-
-		    <div class="col-12 p-0 mt-3 row">
-			<div class="col-12 container-fluid p-0 pe-3 m-0 d-lg-flex d-block">
-			    <p class="detail-title float-start me-5 ms-3">Description</p>
-				<p class="offer-descr list-style-none mb-0 ms-3 ms-lg-0">Experience unparalleled 5G speeds for instant media access and smooth online gaming. 
-				    Powered by a cutting-edge processor, enjoy seamless gaming, expansive connectivity, and smooth performance. 
-				    Capture stunning photos with a 50 MP Sony AI main camera and enhance portraits with bokeh effects. 
-				    With 6 GB RAM + 6 GB Extended RAM, multitask effortlessly. The 90 Hz High Brightness display brings vivid visuals to life. 
-				    An upgraded battery offers extended playtime, while IP64 Dust and Water Resistance ensures durability. 
-				    Portrait mode provides various styles for personalized shots. 
-				    The Funtouch 14 OS offers customization and enhanced image security, keeping your photos private in a secure vault.
-`				</p>
-			    </ul>
-			</div>
-		    </div>
-
-		    <div class="col-12 p-0 mt-3  row border-box ms-lg-2 ms-md-0">
-			<p class="product-title mb-0 border-btm">Product Description</p>
-
-			<div class="col-8 container-fluid p-0 pe-3 m-0 d-block border-btm">
-			    <p class="product-details-header ms-4 mb-0 mt-3">5G Network Speed</p>
-			    <p class="offer-descr ms-4">Download and share things more easily with the unparalleled power of 5G network speeds, giving you almost instant access to any media or games. Enjoy smooth high-quality graphics games online without needing to worry about lags.</p>
-			</div>
-			<div class="col-4 container-fluid p-0 pe-3 m-0 d-block border-btm pb-4">
-			    <img alt="" src="img/5g.png" class="5g-image mt-4 ps-3 img-fluid">
-			</div>
-
-			<div class="col-4 container-fluid p-0 pe-3 m-0 d-block pb-4 border-btm">
-			    <img alt="" src="img/pro.png" class="5g-image mt-4 ps-5 img-fluid">
-			</div>
-			<div class="col-8 container-fluid p-0 pe-3 m-0 d-block pb-4 border-btm">
-			    <p class="product-details-header ms-4 mb-0 mt-3">Powerful Processor</p>
-			    <p class="offer-descr ms-4">The advanced architecture unlocks an experience unlike any other with blazing speed and reassuring endurance. Dive into seamless gaming, expansive 5G connectivity, and smooth performance.</p>
-			</div>
-
-			<p class="view-product mb-0">View all fetures</p>
-		    </div>
-
-		   <div class="col-md-12 border-box mt-4">
-			<p class="product-title border-btm ">Specifications</p>
-			<div class="col-12 container-fluid p-0 mt-4">
-			<p class="detail-title-sp fixed-w float-start me-5 ms-3">In The Box</p>
-			<p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0 me-4">Handset, Quick Start Guide, USB Cable, Eject Tool, Phone Case, Protective Film <br class="d-lg-flex d-none"> (Applied), Warranty Card</p>
-		    </div>
-
-		   <div class="col-12 container-fluid p-0 mt-4">
-			<p class="detail-title-sp fixed-w float-start me-5 ms-3">Model</p>
-			<p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">V2356</p>
-		    </div>
-
-		   <div class="col-12 container-fluid p-0 mt-4">
-			<p class="detail-title-sp fixed-w float-start me-5 ms-3">Model Name</p>
-			<p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">T3 Lite 5G</p>
-		    </div>
-
-		   <div class="col-12 container-fluid p-0 mt-4">
-			<p class="detail-title-sp fixed-w float-start me-5 ms-3">Color</p>
-			<p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">Vibrant Green</p>
-		    </div>
-
-		   <div class="col-12 container-fluid p-0 mt-4">
-			<p class="detail-title-sp fixed-w float-start me-5 ms-3">Browse type</p>
-			<p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">Smartphones</p>
-		    </div>
-
-		   <div class="col-12 container-fluid p-0 mt-4">
-			<p class="detail-title-sp fixed-w float-start me-5 ms-3">SIM type</p>
-			<p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">Dual Sim</p>
-		    </div>
-
-		   <div class="col-12 container-fluid p-0 mt-4">
-			<p class="detail-title-lw fixed-w float-start me-5 ms-3">Hybrid SIM slot</p>
-			<p class="ms-3 offer-descr-lw pe-5 container-fluid p-0 ms-5 m-0 mb-4 ">Yes</p>
-		    </div>
-
-			<p class="view-product mb-0 b-top">View all fetures</p>
-		    </div>
-		    
-
-		   <div class="col-md-12 border-box mt-4 ">
-			<div class="col-12 d-flex">
-			    <p class="product-title">Ratings &amp; Reviews</p>
-			    <button class="review-btn border-0 bg-light ms-auto me-5 mt-4">Rate Product</button>
-			</div>
-			<div class="col-7">
-			    <img class="img-fluid ms-2" alt="" src="img/rating.png">
-			    <p class="detail-title ms-4">Have you used this product? Be the first to review!</p>
-			</div>
-		   </div>
-
-                   <div class="col-md-12 border-box mt-4 ">
-			<div class="col-12 d-flex border-btm">
-			    <p class="product-title m-0">Questions and Answers</p>
-			    <img class="ms-auto me-5 mt-4 qser" src="img/qser.png" alt="">
-			</div>
-		   </div>
-		   <div class="col-md-12 pt-4  ps-4 border-b-s">
-			<p class="bank-offer-title mb-2 ">Q: Which Sensors are present in T3 Lite 5G?</p>
-			<p class="bank-offer-title mt-0 mb-0">A: <span class="offer-descr pe-5 w-98">T3 Lite 5G comes with sensors?Accelerometer?compass?
-			fingerprint sensor</span></p>
-			<p class="m-0 que-txt-low mt-2">Flashstar Commerce</p>
-			<img class="seller mb-3" alt="" src="img/seller.png">
-			<img class="seller mb-3 float-end me-5" alt="" src="img/like.png">
-		   </div>
-		</div>
-		   <div class="col-md-12 pt-4   border-b-s ps-4 ps-md-0">
-			<p class="bank-offer-title mb-2 ps-2 ms-sm-4 ms-md-none">Q: Does T3 Lite 5G has Dual Camera or Triple Camera Setup?</p>
-			<p class="bank-offer-title mb-0 ps-2">A: <span class="offer-descr pe-5 w-98">T3 Lite 5G features a Dual Rear Camera module: 50MP camera + 2MP bokeh camera</span></p>
-			<p class="m-0 que-txt-low mt-2 ps-2">Flashstar Commerce</p>
-			<img class="seller ps-2 mb-3" alt="" src="img/seller.png">
-			<img class="seller mb-3 ps-2 float-end me-5" alt="" src="img/like.png">
-
-			<p class="view-product mb-0 b-top d-none d-md-block">All Questions</p>
-
-			<div class="d-md-flex d-block col-12 b-top">
-			    <p class="offer-descr ques-btm mb-0  mt-4 ms-4 ms-md-auto">Didn't get the right answer you were looking for</p>
-			    <button class="que-btn border-0 bg-light ms-auto me-5 mt-3"><b>Post Your Question</b></button>
-			</div>
-		   </div>
-		   <div class="col-md-12 d-lg-flex d-none justify-content-center">
-		   </div>
-		</div>
-    	    </div>
 	</div>
 
+         <div class="col-md-7 mt-md-5 mt-0 p-0 overflow-hidden">
+            <div class="row mobDetails mt-3">
+               <div class="col-12 col-lg-8 top-list d-md-flex d-none" >
+                  <ul class="top-list-items d-md-flex m-0 p-0 ">
+                     <li class="top-list-item d-flex">
+                        <a class="text-decoration-none">Home</a>
+                        <img alt="" class="right-img" src="img/right.svg">
+                     </li>
+                     <li class="top-list-item d-flex accs">
+                        <a class="text-decoration-none accs-txt">Mobiles &amp; Accessories</a>
+                        <img alt="" class="right-img" src="img/right.svg">
+                     </li>
+                     <li class="top-list-item d-flex">
+                        <a class="text-decoration-none">Mobiles</a>
+                        <img alt="" class="right-img" src="img/right.svg">
+                     </li>
+                     <li class="top-list-item d-flex">
+                        <a class="text-decoration-none">vivo Mobiles</a>
+                        <img alt="" class="right-img" src="img/right.svg">
+                     </li>
+                     <li class="top-list-vivo d-flex">
+                        <a class="text-decoration-none">vivo T3 Lite 5...</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-12 col-lg-4 d-md-flex d-none">
+                  <ul class="top-list-items d-flex m-0 p-0 float-lg-end float-start me-4">
+                     <li class="top-right-item d-flex">
+                        <img alt="" class="check-img me-1" src="img/check.svg">
+                        <a class="text-decoration-none me-3">Compare</a>
+                     </li>
+                     <li class="top-right-item d-flex share-sec">
+                        <span class="material-symbols-outlined share-icon me-1">forward</span>
+                        <a class="text-decoration-none">Share</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <p class="title ms-4 ms-md-0 mt-lg-2 mt-0 mb-0">vivo T3 Lite 5G (Vibrant Green, 128 GB) (4 GB RAM)</p>
+                     <div class="review d-flex">
+                        <p class="review mt-2 d-md-flex d-none">Be the first to Review this product</p>
+                        <img alt="" class="plus-img  ms-4 ms-md-1  mt-1" src="img/plus.png">
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-12">
+                     <p class="offer mt-1  mb-0 d-md-flex d-none">Extra ₹4000 off</p>
+                     <p class="rate mb-0 d-flex fs-4 ms-4 ms-md-0">₹10,499 <span class="old-rate ms-3 fs-6 mt-2 text-decoration-line-through fw-normal">₹14,499</span> <span class="offer-details ms-3 fs-6 mt-2">27%off</span></p>
+                  </div>
+               </div>
+               <div class="bank-offers col-md-12 d-md-block d-none">
+                  <p class="bank-title mb-0 mt-3">Available offers</p>
+                  <div class="d-flex">
+                     <img alt="" class="tag-icon" src="img/tag.png">
+                     <p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> Get ₹50 Instant Discount on first Flipkart UPI transaction on order of ₹200 and above </span> <span class="tc"> T&amp;C </span></p>
+                  </div>
+                  <div class="d-flex">
+                     <img alt="" class="tag-icon" src="img/tag.png">
+                     <p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> 5% Cashback on Flipkart Axis Bank Card </span> <span class="tc"> T&amp;C </span></p>
+                  </div>
+                  <div class="d-flex">
+                     <img alt="" class="tag-icon" src="img/tag.png">
+                     <p class="bank-offer-title mb-0 mt-2 ms-2" >Bank Offer <span class="offer-descr fw-normal"> ₹500 Off On Flipkart Axis Bank Credit Card Transactions </span> <span class="tc"> T&amp;C </span></p>
+                  </div>
+                  <div class="d-flex">
+                     <img alt="" class="tag-icon" src="img/tag.png">
+                     <p class="bank-offer-title mb-0 mt-2 ms-2" >Special Price <span class="offer-descr fw-normal"> Get extra ₹4000 off (price inclusive of cashback/coupon) </span> <span class="tc"> T&amp;C </span></p>
+                  </div>
+                  <p class="tc mb-0 mt-2 ms-2" >View 5 more offers</p>
+               </div>
+               <div class="col-6 d-lg-block d-none exchange-area p-0 mt-4">
+                  <div class="col-12 d-flex exchange align-items-center">
+                     <div class="col-8 d-flex">
+                        <img class="fill-dot me-3 ms-3" alt="" src="img/filldot.png">
+                        <p class="exchange-txt  me-3 mb-0">Buy without Exchange</p>
+                     </div>
+                     <div class="col-4">
+                        <p class="exchange-txt float-end mb-0">₹10,499</p>
+                     </div>
+                  </div>
+                  <div class="col-12  no-exchange align-items-center ">
+                     <div class="no-ex-contents align-items-center d-flex w-100">
+                        <div class="col-8 d-flex">
+                           <img class="fill-dot me-3 ms-3" alt="" src="img/dot.png">
+                           <p class="exchange-txt-low  me-3 mb-0">Buy with Exchange</p>
+                        </div>
+                        <div class="col-4">
+                           <p class="exchange-txt-low float-end mb-0 bold">Up to ₹9,050 off</p>
+                        </div>
+                     </div>
+                     <p class="exchange-txt text-danger mb-0 mt-2 w-100 text-center">Enter pincode to check if exchange is available</p>
+                  </div>
+               </div>
+               <div class="col-md-12 d-none d-md-block p-0">
+                  <div class="col-12 container-fluid p-0 mt-4 ps-4">
+                     <img alt="" class="img-fluid float-start me-5" src="img/vivosmall.png">
+                     <p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-3 m-0">1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories <span class="tc">Know More</p>
+                  </div>
+                  <div class="col-12 p-0 mt-3 row ps-4">
+                     <div class="col-6 p-0 m-0">
+                        <p class="detail-title float-start me-5 ms-3">Color</p>
+                        <img alt="" class="img-fluid float-start ms-lg-5 ms-3" src="img/mobcolor.png">
+                     </div>
+                     <div class="col-6 p-0 m-0 d-block">
+                        <p class="detail-title float-start me-5">RAM</p>
+                        <img alt="" class="img-fluid float-start ms-lg-5 ms-0" src="img/ram.png">
+                     </div>
+                  </div>
+                  <div class="col-12 p-0 mt-3 row  ps-4">
+                     <div class="col-6 p-0 m-0 d-lg-flex d-block">
+                        <p class="detail-title float-start me-5 ms-3">Highlights</p>
+                        <ul class="img-fluid float-start offer-descr pe-3 details-ul">
+                           <li class="highlights-list">4 GB RAM | 128 GB ROM | Expandable Upto 1 TB</li>
+                           <li class="highlights-list">16.66 cm (6.56 inch) Display</li>
+                           <li class="highlights-list">50MP + 2MP | 8MP Front Camera</li>
+                           <li class="highlights-list">5000 mAh Battery</li>
+                           <li class="highlights-list">Dimensity 6300 Processor</li>
+                        </ul>
+                     </div>
+                     <div class="col-6 p-0 m-0 d-lg-flex d-block">
+                        <p class="detail-title float-start me-1">Easy Payment options</p>
+                        <ul class="img-fluid float-start offer-descr p-2 ps-3 details-ul">
+                           <li class="highlights-list">No cost EMI starting from ₹3,500/month</li>
+                           <li class="highlights-list">Net banking & Credit/ Debit/ ATM card</li>
+                           <p class="tc list-style-none">View Details
+                           <p>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-12 p-0 mt-3 row  ps-4">
+                     <div class="col-6 p-0 m-0 d-lg-flex d-block">
+                        <p class="detail-title float-start me-5 ms-3">Seller</p>
+                        <ul class="img-fluid float-start offer-descr p-2 ps-3 details-ul ms-lg-5 ms-0">
+                           <p class="tc list-style-none mb-0">Flashstar Commerce</p>
+                           <li class="highlights-list mt-0">7 Days Service Center Replacement/Repair</li>
+                           <li class="highlights-list">GST invoice available</li>
+                           <p class="tc list-style-none">See other sellers
+                           <p>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-5 p-0 mt-3 row ms-4">
+                     <img alt="" class="img-fluid ms-3 w-5" src="img/coins.png">
+                  </div>
+                  <div class="col-12 p-0 mt-3 row  ps-4">
+                     <div class="col-12 container-fluid p-0 pe-3 m-0 d-lg-flex d-block">
+                        <p class="detail-title float-start me-5 ms-3">Description</p>
+                        <p class="offer-descr list-style-none mb-0 ms-3 ms-lg-0">Experience unparalleled 5G speeds for instant media access and smooth online gaming. 
+                           Powered by a cutting-edge processor, enjoy seamless gaming, expansive connectivity, and smooth performance. 
+                           Capture stunning photos with a 50 MP Sony AI main camera and enhance portraits with bokeh effects. 
+                           With 6 GB RAM + 6 GB Extended RAM, multitask effortlessly. The 90 Hz High Brightness display brings vivid visuals to life. 
+                           An upgraded battery offers extended playtime, while IP64 Dust and Water Resistance ensures durability. 
+                           Portrait mode provides various styles for personalized shots. 
+                           The Funtouch 14 OS offers customization and enhanced image security, keeping your photos private in a secure vault.
+                           `				
+                        </p>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-12 p-0 mt-3  row border-box ms-lg-2 ms-md-0">
+                     <p class="product-title mb-0 border-btm">Product Description</p>
+                     <div class="col-8 container-fluid p-0 pe-3 m-0 d-block border-btm">
+                        <p class="product-details-header ms-4 mb-0 mt-3">5G Network Speed</p>
+                        <p class="offer-descr ms-4">Download and share things more easily with the unparalleled power of 5G network speeds, giving you almost instant access to any media or games. Enjoy smooth high-quality graphics games online without needing to worry about lags.</p>
+                     </div>
+                     <div class="col-4 container-fluid p-0 pe-3 m-0 d-block border-btm pb-4">
+                        <img alt="" src="img/5g.png" class="5g-image mt-4 ps-3 img-fluid">
+                     </div>
+                     <div class="col-4 container-fluid p-0 pe-3 m-0 d-block pb-4 border-btm">
+                        <img alt="" src="img/pro.png" class="5g-image mt-4 ps-5 img-fluid">
+                     </div>
+                     <div class="col-8 container-fluid p-0 pe-3 m-0 d-block pb-4 border-btm">
+                        <p class="product-details-header ms-4 mb-0 mt-3">Powerful Processor</p>
+                        <p class="offer-descr ms-4">The advanced architecture unlocks an experience unlike any other with blazing speed and reassuring endurance. Dive into seamless gaming, expansive 5G connectivity, and smooth performance.</p>
+                     </div>
+                     <p class="view-product mb-0">View all fetures</p>
+                  </div>
+                  <div class="col-md-12 border-box mt-4">
+                     <p class="product-title border-btm ">Specifications</p>
+                     <div class="col-12 container-fluid p-0 mt-4">
+                        <p class="detail-title-sp fixed-w float-start me-5 ms-3">In The Box</p>
+                        <p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0 me-4">Handset, Quick Start Guide, USB Cable, Eject Tool, Phone Case, Protective Film <br class="d-lg-flex d-none"> (Applied), Warranty Card</p>
+                     </div>
+                     <div class="col-12 container-fluid p-0 mt-4">
+                        <p class="detail-title-sp fixed-w float-start me-5 ms-3">Model</p>
+                        <p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">V2356</p>
+                     </div>
+                     <div class="col-12 container-fluid p-0 mt-4">
+                        <p class="detail-title-sp fixed-w float-start me-5 ms-3">Model Name</p>
+                        <p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">T3 Lite 5G</p>
+                     </div>
+                     <div class="col-12 container-fluid p-0 mt-4">
+                        <p class="detail-title-sp fixed-w float-start me-5 ms-3">Color</p>
+                        <p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">Vibrant Green</p>
+                     </div>
+                     <div class="col-12 container-fluid p-0 mt-4">
+                        <p class="detail-title-sp fixed-w float-start me-5 ms-3">Browse type</p>
+                        <p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">Smartphones</p>
+                     </div>
+                     <div class="col-12 container-fluid p-0 mt-4">
+                        <p class="detail-title-sp fixed-w float-start me-5 ms-3">SIM type</p>
+                        <p class="ms-3 offer-descr pe-5 container-fluid p-0 ms-5 m-0">Dual Sim</p>
+                     </div>
+                     <div class="col-12 container-fluid p-0 mt-4">
+                        <p class="detail-title-lw fixed-w float-start me-5 ms-3">Hybrid SIM slot</p>
+                        <p class="ms-3 offer-descr-lw pe-5 container-fluid p-0 ms-5 m-0 mb-4 ">Yes</p>
+                     </div>
+                     <p class="view-product mb-0 b-top">View all fetures</p>
+                  </div>
+                  <div class="col-md-12 border-box mt-4 ">
+                     <div class="col-12 d-flex">
+                        <p class="product-title">Ratings &amp; Reviews</p>
+                        <button class="review-btn border-0 bg-light ms-auto me-5 mt-4">Rate Product</button>
+                     </div>
+                     <div class="col-7">
+                        <img class="img-fluid ms-2" alt="" src="img/rating.png">
+                        <p class="detail-title ms-4">Have you used this product? Be the first to review!</p>
+                     </div>
+                  </div>
+                  <div class="col-md-12 border-box mt-4">
+                     <div class="col-12 d-flex border-btm">
+                        <p class="product-title m-0">Questions and Answers</p>
+                        <img class="ms-auto me-5 mt-4 qser" src="img/qser.png" alt="">
+                     </div>
+                  </div>
+                  <div class="col-md-12 pt-4  ps-4 border-b-s">
+                     <p class="bank-offer-title mb-2 ">Q: Which Sensors are present in T3 Lite 5G?</p>
+                     <p class="bank-offer-title mt-0 mb-0">A: <span class="offer-descr pe-5 w-98">T3 Lite 5G comes with sensors?Accelerometer?compass?
+                        fingerprint sensor</span>
+                     </p>
+                     <p class="m-0 que-txt-low mt-2">Flashstar Commerce</p>
+                     <img class="seller mb-3" alt="" src="img/seller.png">
+                     <img class="seller mb-3 float-end me-5" alt="" src="img/like.png">
+                  </div>
+               </div>
+               <div class="col-md-12 pt-4   border-b-s ps-4 ps-md-0">
+                  <p class="bank-offer-title mb-2 ps-2 ms-0 ms-md-3 d-none d-md-block">Q: Does it has Dual Camera or Triple Camera Setup?</p>
+                  <p class="bank-offer-title mb-0 ps-md-4 ps-2 d-none d-md-block">A: <span class="offer-descr pe-5 w-98">T3 Lite 5G features a Dual Rear Camera module: 50MP camera + 2MP bokeh camera</span></p>
+                  <p class="m-0 que-txt-low mt-2 ps-md-4 ps-2 d-none d-md-block">Flashstar Commerce</p>
+                  <img class="seller ps-2 mb-3 d-none d-md-block" alt="" src="img/seller.png">
+                  <img class="seller mb-3 ps-2 float-end me-5 d-none d-md-block" alt="" src="img/like.png">
+                  <p class="view-product mb-0 b-top d-none d-md-block">All Questions</p>
+                  <div class="d-md-flex d-block col-12 b-top d-none ">
+                     <p class="offer-descr ques-btm mb-0  mt-4 ms-md-auto text-center text-md-left">Didn't get the right answer you were looking for</p>
+                     <button class="que-btn border-0 bg-light ms-md-auto ms-5 me-5 mt-3"><b>Post Your Question</b></button>
+                  </div>
+               </div>
+               <div class="col-md-12 d-lg-flex d-none justify-content-center">
+                  <img class="safe-img" alt="" src="img/safe.png">
+               </div>
+            </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+         </div>
+      </div>
+	    
+  	    <div class="find-seller-box row mt-2 border-btm white d-flex d-md-none">
+		<div class="col-12 d-flex px-4 py-2 align-items-center">
+		    <p class="find-seller-txt mb-0">Find a seller that delivers to you</p>
+		    <button class="find-seller-btn ms-auto bg-light text-primary">Enter pincode</button>
+		</div>
+	    </div>
+	    
+  	    <div class="delivery-box row  white d-flex d-md-none">
+		<div class="col-12 d-flex px-4 py-2 align-items-center">
+		    <img class="truck-icon" src="img/delivery.svg" alt="">
+		    <p class="find-seller-txt mb-0 fw-bold ms-3">₹29 . Delivery by 12 Jul, Friday <br>
+		    <span class="variant-txt-low fw-normal">If order within</span> <span class="text-danger fw-normal" > 09m 20s</span></p>
+		    <img class="truck-icon ms-auto" src="img/right.svg" alt="">
+		</div>
+	    </div>
+	    
+  	    <div class=" row  white d-flex d-md-none mt-2">
+		<div class="col-12 d-flex px-4 py-2 align-items-center">
+
+		    <div class="d-block col-6 text-center">
+		        <img alt="" class="img-fluid ms-auto me-auto" src="img/store.svg">
+		        <p class="find-seller-txt mb-0 ms-3">7 Days Service Center Replacement/Repair</p>
+		    </div>
+
+		    <div class="d-block col-6 text-center">
+		        <img alt="" class="img-fluid ms-auto me-auto rupee" src="img/rupee.svg">
+		        <p class="find-seller-txt mb-0 ms-3">Cash On Delivery Available</p>
+		    </div>
+
+		</div>
+	    </div>
+	    
+                  <div class=" white col-12 container-fluid p-0 mt-4 ps-4 d-flex py-4 d-md-none">
+                     <img alt="" class="img-fluid float-start me vivo-logo my-auto" src="img/vivocroped.png">
+                     <p class="ms-3 find-seller-txt pe-5 container-fluid p-0 ms-3 m-0">1 Year Manufacturer Warranty for Device and 6 Months Manufacturer Warranty for Inbox Accessories <span class="link text-primary">Know More</p>
+                  </div>
+
+	    <div class="small-highlights row white mt-2 ps-4 pb-4 d-block d-md-none">
+		<div class="col-12 d-flex">
+ 		    <h6 class="mt-3 mb-4">Highlights</h6>
+		    <button class="find-seller-btn ms-auto bg-light text-primary mt-3">Search</button>
+		</div>
+
+		<div class="col-12 d-flex">
+		    <img class="img-fluid high-img" alt="" src="img/ram.svg">
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-top" >RAM | ROM</p>
+		        <p class="mb-0 high-bott" >6 GB RAM 128 GB ROM</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-2">
+		    <img class="img-fluid high-img" alt="" src="img/processor.svg">
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-top" >Processor</p>
+		        <p class="mb-0 high-bott" >Dimensity 6300 | Octa core | 2.4 GHz</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3">
+		    <img class="img-fluid high-img" alt="" src="img/rearcamera.svg">
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-top" >Rear Camera</p>
+		        <p class="mb-0 high-bott" >50MP + 2MP</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3">
+		    <img class="img-fluid high-img" alt="" src="img/frontcamera.svg">
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-top" >Front Camera</p>
+		        <p class="mb-0 high-bott" >8MP</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3">
+		    <img class="img-fluid high-img" alt="" src="img/display.svg">
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-top" >Display</p>
+		        <p class="mb-0 high-bott" >6.56 inch LCD</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3">
+		    <img class="img-fluid high-img" alt="" src="img/battery.svg">
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-top" >Battery</p>
+		        <p class="mb-0 high-bott" >5000 mAh</p>
+		    </div>
+	 	</div>
+	    </div>
+
+
+	    <div class="small-highlights row   pb-4 d-block d-md-none">
+		<div class="col-12 d-flex ps-4 white">
+ 		    <h6 class="mt-3 mb-4">Other Details</h6>
+		</div>
+
+		<div class="col-12 d-flex ps-4 white py-2">
+		        <p class="mb-0 high-top other-title" >Network Type</p>
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-bott" >2G, 3G, 4G, 5G</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-2 ps-4">
+		        <p class="mb-0 high-top other-title" >Expandable Storage</p>
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-bott" >Yes</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3 white ps-4 py-2">
+		        <p class="mb-0 high-top other-title" >SIM Type</p>
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-bott" >Dual Sim</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3 ps-4">
+		        <p class="mb-0 high-top other-title" >Audio Jack</p>
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-bott" >No</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3 white  ps-4 py-2">
+		        <p class="mb-0 high-top other-title" >Quick Charging</p>
+		    <div class="d-block ms-3">
+		        <p class="mb-0 high-bott" >No</p>
+		    </div>
+	 	</div>
+
+		<div class="col-12 d-flex mt-3 ps-4">
+		        <p class="mb-0 high-top other-title" >In The Box</p>
+		    <div class=" ms-3 d-flex flex-wrap">
+		        <p class="mb-0 high-bott container p-0" >Handset,Quick Start Guide,USB Cable</p>
+		    </div>
+	 	</div>
+	    </div>
+
+
+	    <div class="row d-block d-md-none white mt-2">
+		<h6 class="ps-4 pt-4">Product Highlight</h6>
+		<div class="col-12">
+		    <img class="imf-fluid w-100" alt="" src="img/producthigh.jpg">
+		    <div class="col-12 d-flex">
+			<p class=" high-bott pt-4 ps-4">All Details</p>
+	 	        <img class="img-fluid ms-auto me-2" alt="" src="img/right.svg">
+		    </div>
+		</div>
+	    </div>
+
+
+      <div class="row	d-none d-md-flex px-5 pb-5 interest-box white">
+               <p class="interest-heading m-0">You might be interested in</p>
+               <div class="col-md-4 int d-flex int">
+                  <div class="col-5">
+                     <img class="img-fluid" alt="" src="img/interest1.png">
+                  </div>
+                  <div class="col-6">
+                     <p class="  interest-title">Power Banks </p>
+                     <p class=" interest-title-low">Min. 50% Off </p>
+                     <button class="button text-white shop-btn" >Shop Now</button>
+                  </div>
+               </div>
+               <div class="col-md-4 int d-flex int">
+                  <div class="col-5">
+                     <img class="img-fluid" alt="" src="img/interest2.png">
+                  </div>
+                  <div class="col-6">
+                     <p class=" interest-title">Mobile Skin Stickers</p>
+                     <p class=" interest-title-low">Min. 50% Off </p>
+                     <button class="button text-white shop-btn" >Shop Now</button>
+                  </div>
+               </div>
+               <div class="col-md-4 int d-flex int">
+                  <div class="col-5">
+                     <img class="img-fluid" alt="" src="img/interest3.png">
+                  </div>
+                  <div class="col-6">
+                     <p class=" interest-title">True Wireless</p>
+                     <p class=" interest-title-low">Min. 50% Off </p>
+                     <button class="button text-white shop-btn" >Shop Now</button>
+                  </div>
+               </div>
+            </div>
+                      
+                       
+            <div class="row px-3 interest-box mt-3 white overflow-hidden">
+               <p class="interest-heading m-0 d-md-block d-none">Similar Product</p>
+		<div class="col-12 d-flex b-btm">
+      		    <img class="d-block d-md-none img-fluid similar-img-sm" alt="" src="img/mobilesm.png">
+                   <h6 class="mt-4 ps-1 pb-3  m-0 d-block d-md-none">Similar Products</h6>
+		</div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/similar1.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2 mt-2" alt="" src="img/similar2.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">IAIR S10 Dual Sim Keypad Phone With Jazz Wired Earphone | Big 2.4...</p>
+                  <img class="img-fluid ps-2 mt" alt="" src="img/star2.png">
+                  <p class="phone-price ps-2 mb-0">₹919 <span class="old-price"> ₹1,899 </span><span class="price-desc"> 51% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/similar3.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">vivo T3x 5G (Crimson Bliss, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star2.png">
+                  <p class="phone-price ps-2 mb-0">₹13,499 <span class="old-price"> ₹17,499 </span><span class="price-desc"> 22% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/similar4.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme Narzo N63 4G (Twilight Purple, 64 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,999 <span class="old-price"> ₹16,999 </span><span class="price-desc"> 29% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/similar5.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/similar3.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+            </div>
+
+
+            <div class="row px-3 interest-box mt-3 white  d-none d-md-flex">
+               <p class="interest-heading m-0">Bought together</p>
+               <div class="col-lg-2 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought1.png">
+                  <p class="offer-descr phone-details ps-2 mb-0 pt-2">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2 mt-2" alt="" src="img/bought2.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">Mivi DuoPods i3 TWS,13mm Bass,45+H Playtime,AI ENC,Low Latency,Ty...</p>
+                  <img class="img-fluid ps-2 mt" alt="" src="img/star2.png">
+                  <p class="phone-price ps-2 mb-0">₹999 <span class="old-price"> ₹3,999 </span><span class="price-desc"> 75% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought3.png">
+                  <p class="offer-descr phone-details ps-2 mb-0 pt-3">vivo T3x 5G (Crimson Bliss, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star2.png">
+                  <p class="phone-price ps-2 mb-0">₹13,499 <span class="old-price"> ₹17,499 </span><span class="price-desc"> 22% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought4.png">
+                  <p class="offer-descr phone-details ps-2 mb-0 pt-3">boAt Immortal 150 w/ Beast Mode(40ms Low Latency), 40 HRS Playbac...</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹1,199 <span class="old-price"> ₹16,99 </span><span class="price-desc"> 16% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought5.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought5.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+            </div>
+
+
+            <div class="col-md-11 border-box mt-2 d-block d-md-none white ">
+               <div class="col-12 d-flex">
+                  <h6 class="ms-4 pb-0 mb-0 fs-6 mt-2">Ratings &amp; Reviews</h6>
+                  <button class="review-btn border-0 bg-light ms-auto me-5 mt-2 d-none">Rate Product</button>
+               </div>
+               <div class="col-10 ms-4">
+                  <img class="img-fluid ms-2" alt="" src="img/rating.png">
+               </div>
+            </div>
+            <div class="col-md-12 pt-4  ps-4 border-b-s d-md-none d-block pb-3  white ">
+               <p class="bank-offer-title mb-2 ps-2 ms-md-3">Q: Which Sensors are present in T3 Lite 5G?</p>
+               <p class="bank-offer-title mt-0 mb-0 ps-2">A: <span class="offer-descr pe-5 w-98">T3 Lite 5G comes with sensors?Accelerometer?compass?
+                  fingerprint sensor</span>
+               </p>
+               <p class="m-0 que-txt-low mt-2 ps-2 ">Flashstar Commerce</p>
+               <img class="seller ps-2 mb-3 d-none d-md-flex" alt="" src="img/seller.png">
+               <img class="seller mb-3 float-end me-5  d-none d-md-flex" alt="" src="img/like.png">
+            </div>
+
+            <div class="col-md-12 pt-4  white border-b-s ps-4 ps-md-0 d-block d-md-none delivery-box">
+               <p class="bank-offer-title mb-2 ps-2 ms-0 ms-md-3">Q: Does it has Dual Camera or Triple Camera Setup?</p>
+               <p class="bank-offer-title mb-0 ps-md-4 ps-2">A: <span class="offer-descr pe-5 w-98">T3 Lite 5G features a Dual Rear Camera module: 50MP camera + 2MP bokeh camera</span></p>
+               <p class="m-0 que-txt-low mt-2 ps-md-4 ps-2">Flashstar Commerce</p>
+               <img class="seller ps-2 mb-3 d-none d-md-flex" alt="" src="img/seller.png">
+               <img class="seller mb-3 ps-2 float-end me-5 d-none d-md-flex" alt="" src="img/like.png">
+               <p class="view-product mb-0 b-top d-none d-md-block">All Questions</p>
+               <div class="d-md-flex d-block col-12 b-top d-none ">
+                  <p class="offer-descr ques-btm mb-0  mt-4 ms-md-auto text-center text-md-left">Didn't get the right answer you were looking for</p>
+                  <button class="que-btn border-0 bg-light ms-md-auto ms-5 me-5 mt-3"><b>Post Your Question</b></button>
+               </div>
+            </div>
+
+
+	    <div class="row px-3 interest-box mt-3 white d-md-none d-flex">
+               <h6 class=" my-4 ms-4 m-0">Bought together</h6>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought1.png">
+                  <p class="offer-descr phone-details ps-2 mb-0 pt-2">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2 mt-2" alt="" src="img/bought2.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">Mivi DuoPods i3 TWS,13mm Bass,45+H Playtime,AI ENC,Low Latency,Ty...</p>
+                  <img class="img-fluid ps-2 mt" alt="" src="img/star2.png">
+                  <p class="phone-price ps-2 mb-0">₹999 <span class="old-price"> ₹3,999 </span><span class="price-desc"> 75% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought3.png">
+                  <p class="offer-descr phone-details ps-2 mb-0 pt-3">vivo T3x 5G (Crimson Bliss, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star2.png">
+                  <p class="phone-price ps-2 mb-0">₹13,499 <span class="old-price"> ₹17,499 </span><span class="price-desc"> 22% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought4.png">
+                  <p class="offer-descr phone-details ps-2 mb-0 pt-3">boAt Immortal 150 w/ Beast Mode(40ms Low Latency), 40 HRS Playbac...</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹1,199 <span class="old-price"> ₹16,99 </span><span class="price-desc"> 16% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought5.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+               <div class="col-lg-2 col-6 col-md-4 similar-box p-4">
+                  <img class="img-fluid pb-2" alt="" src="img/bought5.png">
+                  <p class="offer-descr phone-details ps-2 mb-0">realme NARZO N65 5G (DEEP GREEN, 128 GB)</p>
+                  <img class="img-fluid ps-2" alt="" src="img/star1.png">
+                  <p class="phone-price ps-2 mb-0">₹11,398 <span class="old-price"> ₹13,999 </span><span class="price-desc"> 18% off</p>
+               </div>
+            </div>
+
+
+
+	    <div class="brand-directory-container white mt-3 pb-4 container-fluid pt-5 d-none d-md-block px-4">
+		<p class="stories-title mb-0">Top Stories : <span class="brand"> Brand Directory</p>
+		<p class="most-search-title">MOST SEARCHED IN MOBILES & ACCESSORIES: <span class="most-search"> NEXUS 5 COVERS | HCL ME TABLET | HTC ONE M9 PRICE | MICROMAX A110 PRICE | MICROMAX ELANZA 2 | CANVAS TAB P470 | MICROMAX CANVAS A99 | 32GB SD CARD | IPHONE 6 EXCHANGE OFFER | HTC DESIRE MOBILES | LENOVO MOBILE PRICE LIST 2015 | MICROMAX 3G MOBILE | SAMSUNG MOBILE PRICE LIST IN INDIA 2015 | VIVO PHONE PRICE IN INDIA | MOTO X2 PRICE | NOKIA LUMIA 930 PRICE | PENASONIC | SAMSUNG E7 MOBILE | SAMSUNG GALAXY GRAND QUATTRO PRICE | SAMSUNG GALAXY ON 5 | SENNHEISER HD 180 | YUREKA YU | LUMIA 640 | XL LTE | LEECO 4G MOBILE | NEW MOBILE PHONES 4G | LG NEXUS 4  GALAXY S3</p>
+	    </div>
+
+	    <div class="row footer-row text-white px-3 pt-5 pb-4 d-none d-md-flex">
+		
+		<div class="col-lg-7 col-12 d-flex">
+		
+		    <div class="col-3">
+			<ul class="list-style-none pt-3">
+			    <li class="list-header list-style-none">ABOUT</li>
+			    <li class="list-footer list-style-none">Contact Us</li>
+			    <li class="list-footer list-style-none">About Us</li>
+			    <li class="list-footer list-style-none">Careers</li>
+			    <li class="list-footer list-style-none">Flipkart Stories</li>
+			    <li class="list-footer list-style-none">Press</li>
+			    <li class="list-footer list-style-none">Corporate Information</li>
+			</ul>
+		    </div>
+		
+		    <div class="col-3">
+			<ul class="list-style-none pt-3">
+			    <li class="list-header list-style-none">GROUP COMPANIES</li>
+			    <li class="list-footer list-style-none">Myntra</li>
+			    <li class="list-footer list-style-none">Cleartrip</li>
+			    <li class="list-footer list-style-none">Shopsy</li>
+			</ul></div>
+		
+		    <div class="col-3">
+			<ul class="list-style-none pt-3">
+			    <li class="list-header list-style-none">HELP</li>
+			    <li class="list-footer list-style-none">Payments</li>
+			    <li class="list-footer list-style-none">Shipping</li>
+			    <li class="list-footer list-style-none">Cancellation &amp; Returns</li>
+			    <li class="list-footer list-style-none">FAQ</li>
+			    <li class="list-footer list-style-none">Report Infringement</li>
+			</ul></div>
+		
+		    <div class="col-3">
+			<ul class="list-style-none pt-3">
+			    <li class="list-header list-style-none">CUSTOMER POLICY</li>
+			    <li class="list-footer list-style-none">Cancellation &amp; Returns</li>
+			    <li class="list-footer list-style-none">Terms  Of Use</li>
+			    <li class="list-footer list-style-none">Security</li>
+			    <li class="list-footer list-style-none">Privacy</li>
+			    <li class="list-footer list-style-none">Sitemap</li>
+			    <li class="list-footer list-style-none">Grievance Redressal</li>
+			    <li class="list-footer list-style-none">EPR Compliance</li>
+			</ul></div>
+			
+		</div>
+		
+		<div class="col-lg-5 col-12 d-flex right-col-footer">
+		
+		    <div class="col-6">
+			<ul class="list-style-none pt-3">
+			    <li class="list-header list-style-none">MAIL US</li>
+			    <li class="list-footer list-style-none">Flipkart Internet Private Limited, <br>
+				Buildings Alyssa, Begonia & <br>
+				Clove Embassy Tech Village, <br>
+				Outer Ring Road, Devarabeesanahalli Village, <br>
+				Bengaluru, 560103, <br>
+				Karnataka, India</li>
+			    <li class="list-header list-style-none pt-3">Social</li>
+			    <li class="list-footer list-style-none">
+				<img alt="" class="img-fluid" src="img/social-media.png">
+			    </li> 
+			</ul></div>
+		
+		    <div class="col-6">
+			<ul class="list-style-none pt-3">
+			    <li class="list-header list-style-none">Registered Office Address:</li>
+			    <li class="list-footer list-style-none">Flipkart Internet Private Limited,<br>
+ 				Buildings Alyssa, Begonia & <br>
+				Clove Embassy Tech Village, <br>
+				Outer Ring Road, Devarabeesanahalli Village, <br>
+				Bengaluru, 560103, <br>
+				Karnataka, India <br>
+				CIN : U51109KA2012PTC066107 <br>
+				Telephone: <a href="#" class="text-decoration-none"> 044-45614700 / 044-67415800 </a><br>
+			   </li>
+			</ul></div>
+
+		</div>		
+
+	    </div>
+  	    <div class="bottom-footer row d-lg-flex d-none">
+  		<div class="col-12 justify-content-between d-flex btm-footer py-3 pt-4 px-5">
+
+			<div class="btm-footer-items d-flex">
+			    <img class="img-fluid" alt="" src="img/foo1.png">
+			    <p class="footer-txt text-white">Become a Seller</p>
+			</div>
+
+			<div class="btm-footer-items d-flex">
+			    <img class="img-fluid" alt="" src="img/foo2.png">
+			    <p class="footer-txt text-white">Advertise</p>
+			</div>
+
+			<div class="btm-footer-items d-flex">
+			    <img class="img-fluid" alt="" src="img/foo3.png">
+			    <p class="footer-txt text-white">Gift Cards</p>
+			</div>
+
+			<div class="btm-footer-items d-flex">
+			    <img class="img-fluid" alt="" src="img/foo4.png">
+			    <p class="footer-txt text-white">Help Center</p>
+			</div>
+
+			<div class="btm-footer-items d-flex">
+			    <p class="footer-txt text-white">© 2007-2024 Flipkart.com</p>
+			</div>
+
+			<div class="btm-footer-items d-flex">
+			    <img class="img-fluid" alt="" src="img/cards.png">
+			</div>
+		</div>
+	    </div>
+	<div class="fixed-bottom row d-flex d-md-none">
+	    <div class="col-6 p-0">
+ 	    	<button class="border-0 bg-light w-100 buy-btn">Add to cart</button>
+	    </div>
+	    <div class="col-6 p-0">
+ 	    	<button class="border-0 bg-warning w-100 buy-btn">Buy now</button>
+	    </div>
+	</div>
+   </body>
 </html>
+
+
+
+
