@@ -1,5 +1,23 @@
 body{
    background-color: #f1f3f6;
+   overflow-x: hidden;
+}
+.bottom-container{
+    padding:0px 77px 1px 76px !important;
+}
+.bottom-nav-links {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+.input-box {
+    margin-top: 3px;
+    width: 44.666667% !important;
+}
+.nav-item{
+    margin-left:34px !important;
+}
+.logo-box{
+    margin-bottom: 3px;
 }
 .white{
     background-color:#fff;
@@ -84,6 +102,7 @@ body{
     margin-right: 3px;
 }
 .most-search{
+    cursor:pointer;
     color: #505050;
     padding: 0 5px;
     border-right: 1px solid #333;
@@ -102,6 +121,7 @@ body{
     margin-bottom: 8px;
 }
 .list-footer{
+    cursor:pointer;
     line-height: 2;
     font-size: 13px;
     font-weight: 500;
@@ -109,6 +129,15 @@ body{
     display: block;
     font-weight: 400;
     font-size: 12px;
+}
+.list-footer:hover{
+    text-decoration: underline;
+}
+.list-address{
+    cursor:auto !important;
+    &:hover{
+        text-decoration:none !important;
+    }
 }
 .right-col-footer{
     border-left:1px solid #878787;
@@ -189,5 +218,31 @@ body{
     width:100%;
 }
 .other-title{
-    width:103px !important;
+    width:111px !important;
+}
+.que-button{
+    color: #6e6e6e;
+    border: 1px solid #8787;
+    width: 102px;
+    height: 30px;
+    padding: 0px !important;
+    font-size: 12px;
+}
+
+.que-button-dis{
+    margin-left:12px;
+    color: #6e6e6e;
+    border: 1px solid #8787;
+    width: 55px;
+    height: 30px;
+    padding: 0px !important;
+    font-size: 12px;
+}
+.like-btn{
+    width: 16px;
+    margin-right: 5px;
+}
+.ques-search-btn{
+    width:19px;
+    margin-right:3px;
 }
